@@ -20,6 +20,7 @@ public class UserRest {
     @Autowired
     private MyProducer myProducer;
 
+//    https://blog.csdn.net/wd2014610/article/details/81781109
     @GetMapping("/send")
     public String send() {
         Message msg = MessageBuilder.of("===-=-=").topic("yangjianxiong").build();

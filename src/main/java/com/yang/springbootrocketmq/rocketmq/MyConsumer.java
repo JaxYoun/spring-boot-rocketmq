@@ -12,8 +12,12 @@ import java.util.Map;
  */
 @MQConsumer(topic = "yangjianxiong", consumerGroup = "group_con_yang")
 public class MyConsumer extends AbstractMQPushConsumer {
+
     @Override
     public boolean process(Object o, Map map) {
+        System.out.println(o.toString());
+        System.out.println(map.toString());
         return false;
     }
+
 }
