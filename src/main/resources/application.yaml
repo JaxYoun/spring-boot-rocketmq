@@ -1,0 +1,5 @@
+spring:
+  rocketmq:
+    name-server-address: 192.168.65.128:9876
+    producer-group: group_yang
+    send-msg-timeout: 5000
